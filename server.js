@@ -1,6 +1,6 @@
 var express = require('express');
 var http = require('http');
-var port = process.env.PORT || 8080;
+var port = 3000;
 var path = require('path');
 var bodyParser = require('body-parser');
 var crypto = require('crypto');
