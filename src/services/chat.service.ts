@@ -12,10 +12,10 @@ export class ChatService {
     private socket = io('http://localhost:' + process.env.PORT || 8080, );
     private url = 'http://localhost:8080';
     constructor(private http: HttpClient) { }
-    getCertificate() {
-        // console.log('hello');
-        this.http.get(this.url);
-    }
+    // getCertificate() {
+    //     // console.log('hello');
+    //     this.http.get(this.url);
+    // }
 
     joinRoom(data) {
         // console.log(this.socket);
