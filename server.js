@@ -12,6 +12,8 @@ var https = require('https');
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
