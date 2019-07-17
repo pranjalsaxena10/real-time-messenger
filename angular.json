@@ -57,6 +57,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "sslKey": "privatekey.pem",
+            "sslCert": "certificate.pem",
+            "ssl": true,
             "browserTarget": "Messenger:build"
           },
           "configurations": {

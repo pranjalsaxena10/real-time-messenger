@@ -1,0 +1,29 @@
+<div class="App">
+  
+    <main class="chat-window">
+      <header class="chat-header">
+        <h1>{{user}} in {{room}}</h1>
+        <span class="participants"></span>
+      </header>
+      <perfect-scrollbar>
+        <section>
+          <ul class="message-list" >
+            <li class="user-message" *ngFor="let messageObject of messageArray">
+              <span class="user-id">{{ messageObject.user }}</span>
+              <span>{{ messageObject.message }}</span>
+            </li>
+          </ul>
+        </section>
+      </perfect-scrollbar>
+
+      <footer class="chat-footer">
+          <button mat-raised-button color="primary" (click)='leave()' [disabled]='disabledFlag' routerLink='/createUser'>Leave</button>
+          &nbsp; &nbsp;
+          <form (ngSubmit) = 'sendMessage()'>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Type a message. Hit Enter to send" name="title" [(ngModel)]="messageText" type="text">
+          </mat-form-field>
+        </form>
+     </footer>
+    </main>
+  </div>

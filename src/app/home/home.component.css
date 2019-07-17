@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+  }
+  .button {
+    min-width: 150px;
+    max-width: 500px;
+    margin-left: 550px;
+  }
+  h1 {
+    color:#283593;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

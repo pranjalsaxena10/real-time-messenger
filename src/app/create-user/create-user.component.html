@@ -1,0 +1,32 @@
+<mat-card class="example-form" style="width:400px; margin:0 auto;" >
+<form>
+      <h3> Room Selection </h3>
+      <mat-form-field class="example-full-width">
+          <input matInput required placeholder="Enter username" name="title" [(ngModel)]="user" type="text">
+      </mat-form-field>
+      <!-- <input type="text" [(ngModel)]="user" *ngIf = "visible"  class="form-control" id="username" placeholder="Enter username"> -->
+<!-- 
+      <div class="col-sm-5" *ngIf = "visible">
+      <select name="roomInput" id="roomInput" placeholder="Enter username" class="form-control" [(ngModel)]="room">
+          <option value="Lobby">Lobby</option>
+          <option value="Hall">Hall</option>
+          <option value="Deluxe">Deluxe</option>
+      </select>
+      </div> -->
+      <mat-form-field required class="example-full-width">
+          <mat-label>Select a room</mat-label>
+          <mat-select [(value)]="room">
+            <mat-option value="Supreme">Supreme</mat-option>
+            <mat-option value="Legends">Legends</mat-option>
+            <mat-option value="Classy">Classy</mat-option>
+          </mat-select>
+      </mat-form-field>
+      <!-- <p>You selected: {{room}}</p> -->
+  <!-- <div class="col col-sm-2">
+      <div style="margin-top:19px;" class="pull-right"> 
+          <button type="button" class="btn btn-primary" *ngIf = "visible" (click)="join()">Join</button>
+      </div>
+  </div> -->
+  <button mat-raised-button color="primary" (click)="join()" routerLink='/chatRoom'>New Chat</button>
+</form>
+</mat-card>
