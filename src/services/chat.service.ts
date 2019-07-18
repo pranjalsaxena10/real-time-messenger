@@ -9,7 +9,7 @@ import * as Rx from 'rxjs';
 
 export class ChatService {
 
-    private socket = io.connect();
+    private socket = io('http://localhost:' + 8080, );
     private url = 'http://localhost:8080';
     constructor(private http: HttpClient) { }
     // getCertificate() {
