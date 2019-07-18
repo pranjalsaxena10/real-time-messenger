@@ -9,8 +9,8 @@ import * as Rx from 'rxjs';
 
 export class ChatService {
 
-    private socket = io('http://localhost:' + 8080, );
-    private url = 'http://localhost:8080';
+    private socket = io('http://myservercode.herokuapp.com');
+    // private url = 'http://localhost:8080';
     constructor(private http: HttpClient) { }
     // getCertificate() {
     //     // console.log('hello');
