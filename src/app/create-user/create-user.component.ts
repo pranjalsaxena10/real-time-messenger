@@ -16,7 +16,7 @@ export class CreateUserComponent {
     messageText: String;
     constructor(private _chatService: ChatService, private _dataService: DataService) {
         window.history.forward();
-        this._chatService.getCertificate();
+        // this._chatService.getCertificate();
     }
 
     join() {
